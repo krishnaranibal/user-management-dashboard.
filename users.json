@@ -1,0 +1,83 @@
+{
+    "users":[
+        {
+            "id":1,
+            "username":"Krishna_bal",
+            "email":"krishna@gmail.com",
+            "phone":"9348719099",
+            "creationDate":"2023-01-15"
+        },
+        
+        {
+            "id":2,
+            "username":"Alpha_sanial",
+            "email":"alpha@gmail.com",
+            "phone":"9348715761",
+            "creationDate":"2023-05-15"
+        },
+
+        {
+            "id":3,
+            "username":"Geeti_gayatri",
+            "email":"geeti@gmail.com",
+            "phone":"9445719099",
+            "creationDate":"2023-11-06"
+        },
+
+        {
+            "id":4,
+            "username":"Priyanka_patra",
+            "email":"priyanka@gmail.com",
+            "phone":"6565719099",
+            "creationDate":"2023-04-15"
+        },
+
+        {
+            "id":5,
+            "username":"Twinkle_mohanty",
+            "email":"Twinkle@gmail.com",
+            "phone":"4567719099",
+            "creationDate":"2023-05-15"
+        },
+
+        {
+            "id":6,
+            "username":"Banshita_beura",
+            "email":"banshita@gmail.com",
+            "phone":"9548179088",
+            "creationDate":"2023-01-15" 
+        },
+
+        {
+            "id":7,
+            "username":"Eesha_panda",
+            "email":"eesha@gmail.com",
+            "phone":"9998719099",
+            "creationDate":"2023-01-15"
+        },
+
+        {
+            "id":8,
+            "username":"Monalisa_behera",
+            "email":"monalisa@gmail.com",
+            "phone":"4476719099",
+            "creationDate":"2023-02-15"
+        }, 
+
+        {
+            "id":9,
+            "username":"Pratikshya_pattanaik",
+            "email":"pratikshya@gmail.com",
+            "phone":"7879719099",
+            "creationDate":"2023-01-15"
+        },
+
+        {
+            "id":10,
+            "username":"bindu_naik",
+            "email":"bindu@gmail.com",
+            "phone":"9966719099",
+            "creationDate":"2023-03-15"
+        }
+    ]
+}

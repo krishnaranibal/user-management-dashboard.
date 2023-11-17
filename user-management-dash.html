@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+    <style>
+      *{
+  margin: 0px;
+  padding: 0px;
+} 
+
+  #img{
+  
+  text-align: center;
+  margin-top: 50px;
+  }
+ 
+  body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  #tabs {
+    display: flex;
+    background-color: #333;
+    color: white;
+  }
+
+  .tab {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s;
+  }
+
+  .tab:hover {
+    background-color: #555;
+  }
+
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.container {
+  width: 400px;
+  height: 300px;
+  margin-left: 36%;
+  background-color: lightskyblue;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#userDetailsTabContent,
+    #accountCreationTabContent {
+      display: none;
+      padding: 20px;
+    }
+
+    #userDetailsTabContent.show,
+    #accountCreationTabContent.show {
+      display: block;
+    }
+    </style>
+</head>
+<body>
+    
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+</head>
+<body>
+
+  <div id="tabs">
+    <div class="tab" onclick="showTab('userDetailsTabContent')">User Details</div>
+    <div class="tab" onclick="showTab('accountCreationTabContent')">Account Creation</div>
+  </div>
+
+  <div id="img">
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk_TD484H6kMyj3_qTezg3OUmu7OVFY70fqQ&usqp=CAU">
+  </div>
+
+  <div id="userDetailsTabContent">
+    <center><h2>User Details</h2></center>
+    <table class="min-w-full bg-white border2 border-gray-300">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>User Name</th>
+                <th>Email</th>
+                <th>Phone No</th>
+                <th>Creation Date</th>
+            </tr>
+        </thead>
+        <tbody>
+                        
+    <tr onclick="openModal(1, 'Krishna bal', 'krishna@gmail.com', '9348719099', '2023-01-15')">
+          <td>1</td>
+          <td>Krishna bal</td>
+          <td>krishna@gmail.com</td>
+          <td>9348719099</td>
+          <td>2023-01-15</td>     
+      </tr>
+
+    <tr onclick="openModal(2, 'Alpha sanial', 'alpha@gmail.com', '9348715761', '2023-05-15')">
+        <td>2</td>
+        <td>Alpha sanial</td>
+        <td>alpha@gmail.com</td>
+        <td>9348715761</td>
+        <td>2023-05-15</td>                              
+    </tr>
+
+    <tr onclick="openModal(3, 'Geeti gayatri', 'geeti@gmail.com', '9445719099', '2023-11-06')">
+       <td>3</td>
+       <td>Geeti gayatri</td>
+       <td>geeti@gmail.com</td>
+       <td>9445719099</td>
+       <td>2023-11-06</td>
+                               
+    </tr>
+            
+    <tr onclick="openModal(4, 'Priyanka patra', 'Priyanka@gmail.com', '6565719099', '2023-04-15')"> 
+        <td>4</td>
+        <td>Priyanka patra</td>
+        <td>Priyanka@gmail.com</td>
+        <td>6565719099</td>
+        <td>2023-04-15</td>
+                                   
+    </tr>
+
+    <tr onclick="openModal(5, 'Twinkle mohanty', 'Twinkle@gmail.com', '4567719099', '2023-05-15')">
+       <td>5</td>
+        <td>Twinkle mohanty</td>
+        <td>Twinkle@gmail.com</td>
+        <td>4567719099</td>
+        <td>2023-05-15</td>                                 
+    </tr>
+
+    <tr onclick="openModal(6, 'Banshita beura', 'banshita@gmail.com', '9548179088', '2023-01-15')">
+       <td>6</td>
+       <td>Banshita beura</td>
+       <td>banshita@gmail.com</td>
+       <td>9548179088</td>
+       <td>2023-01-15</td>                   
+     </tr>
+
+     <tr onclick="openModal(7, 'Eesha panda', 'eesha@gmail.com', '9998719099', '2023-01-15')">
+       <td>7</td>
+       <td>Eesha panda</td>
+       <td>eesha@gmail.com</td>
+       <td>9998719099</td>
+       <td>2023-01-15</td>              
+      </tr>
+
+     <tr onclick="openModal(8, 'Monalisa behera', 'monalisa@gmail.com', '4476719099', '2023-02-15')">
+        <td>8</td>
+        <td>Monalisa behera</td>
+        <td>monalisa@gmail.com</td>
+        <td>4476719099</td>
+        <td>2023-02-15</td>                          
+      </tr>
+
+      <tr onclick="openModal(3, 'Pratikshya pattanaik', 'Pratikshya@gmail.com', '7879719099', '2023-01-15')">
+          <td>9</td>
+          <td>Pratikshya pattanaik"</td>
+          <td>Pratikshya@gmail.com</td>
+          <td>7879719099</td>
+          <td>2023-01-15</td>
+                                   
+         </tr>
+
+   <tr onclick="openModal(3, 'bindu naik', 'bindu@gmail.com', '9966719099', '2023-03-06')">
+        <td>10</td>
+        <td>bindu naik</td>
+        <td>bindu@gmail.com</td>
+        <td>9966719099</td>
+        <td>2023-03-15</td>
+                    
+        </tbody>
+    </table>
+
+  </div>
+
+  <div id="accountCreationTabContent">
+    <center><h2>Account Creation</h2></center>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      
+      <button type="submit">Create Account</button>
+    </form>
+    
+  </div>
+
+  <script>
+    function showTab(tabId) {
+      document.getElementById('userDetailsTabContent').classList.remove('show');
+      document.getElementById('accountCreationTabContent').classList.remove('show');
+
+      document.getElementById(tabId).classList.add('show');
+    }
+
+    <!-- Add this script at the end of your HTML body -->
+
+  // Function to open the modal
+  function openModal(userId, userName, userEmail, userPhone, creationDate) {
+    const modal = document.createElement('div');
+    modal.className = 'modal';
+
+    modal.innerHTML = `
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>User Details</h2>
+        <p><strong>ID:</strong> ${userId}</p>
+        <p><strong>Username:</strong> ${userName}</p>
+        <p><strong>Email:</strong> ${userEmail}</p>
+        <p><strong>Phone:</strong> ${userPhone}</p>
+        <p><strong>Creation Date:</strong> ${creationDate}</p>
+        <button onclick="generateReport(${userId})">Generate Report</button>
+      </div>
+    `;
+
+    document.body.appendChild(modal);
+  }
+
+  // Function to close the modal
+  function closeModal() {
+    const modal = document.querySelector('.modal');
+    if (modal) {
+      document.body.removeChild(modal);
+    }
+  }
+
+  // Function to generate a report (placeholder)
+  function generateReport(userId) {
+    alert(`Generating report for user with ID ${userId}`);
+    closeModal(); // Close the modal after generating the report (you can modify this as needed)
+  }
+
+
+  </script>
+
+</body>
+</html>
+
+</body>
+</html>
